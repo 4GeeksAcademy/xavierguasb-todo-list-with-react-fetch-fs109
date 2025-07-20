@@ -10,9 +10,11 @@ import '../styles/index.css'
 
 // components
 import Home from './components/Home';
+import Prueba from './components/Prueba';
+import TodoList from './components/TodoList';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <Home/>
+    <TodoList/>
   </React.StrictMode>,
 )

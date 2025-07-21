@@ -9,3 +9,37 @@
     import 'relative/path/to/stylesheet.scss';
 
 */
+
+input {
+    width: 100%;
+    outline: none;
+}
+
+.totalitems {
+    font-size: 13px;
+    color: #6c757d;
+}
+
+.deleteButtom {
+    margin-top: 5px;
+    font-size: 8px;
+    display: none;
+}
+
+.listTodo:hover .deleteButtom {
+    display: block;
+}
+
+.final1 {
+    border: solid 1px #dee2e6;
+    padding: 1px;
+    width: 98%;
+    align-self: center;
+}
+
+.final2 {
+    border: solid 1px #dee2e6;
+    padding: 1px;
+    width: 96%;
+    align-self: center;
+}

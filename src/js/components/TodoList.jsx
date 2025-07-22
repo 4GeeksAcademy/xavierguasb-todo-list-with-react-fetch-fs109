@@ -47,6 +47,18 @@ const TodoList = () => {
             });
     }
 
+    function eliminarTodasLasTareas(){
+
+        const deletePromises = tasks.map((t) =>
+            fetch(`https://playground.4geeks.com/todo/todos/${t.id}`, {
+                method: "DELETE",
+            })
+        );
+
+        Promise.all(deletePromises)
+            .then(() => leerTareas())
+    }
+
     return (
         <div className="container">
             <h1 className="text-center">todos</h1>
@@ -87,6 +99,11 @@ const TodoList = () => {
                         </li>
                         <div className="final1"></div>
                         <div className="final2"></div>
+                        <button
+                            className="btn btn-danger btn-sm float-end"
+                            onClick={eliminarTodasLasTareas}>
+                            Eliminar todas las tareas
+                        </button>
                     </ul>
                 </div>
             </div>
